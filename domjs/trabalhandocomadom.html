@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt">
+  <head>
+    <meta charset="utf-8">
+    <title>Dom</title>
+  </head>
+  <body>
+    <h1>Document
+    Object
+    Model
+  </h1>
+      <br>
+    <p style="color:red">Dom serve para manipular os elementos da tag html via id, class, e name.
+      aqui vamos trabalhar direto com a dom.</p>
+      <br>
+      <p>let inputElement = document.getElementById('nome'); -> buscanto pelo id da tga, pois o id ẽ unico para casa id</p>
+      <p>let inputElement = document.getElementByTagName('input'); -> buscando pela diretamentepela tag</p>
+      <p>let inputElement = document.getElementByClassName('nome');-> buscando pela nome da class
+        lembrando que ela retonar um array, pois pode ter mais de uma class com o mesmo nome no html.</p>
+      <p>let inputElement = document.querySelector('nome')-> o mais usado busca os elementos na dom,ele deixa a gente percorrer na dom ate achar o
+      elemento. Podemos tamém pega os atributos do html let inputElement = document.getquerySelector(' input [nome-nome]').
+      podemos passar mais de um elemento usando o getquerySelectorAll();
+     </p>
+
+    <div id="app">
+
+      <input type="text" name="nome" id="nome"/>
+      <button class="botao">add</button>
+
+    </div>
+
+    <script>
+
+        /*let inputElement = document.getElementById('nome');
+        console.log(inputElement);
+        */
+        let inputElement = document.getquerySelector('body div#app input'); // como se fosse um diretorio
+    </script>
+  </body>
+</html>
