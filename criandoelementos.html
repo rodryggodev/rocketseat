@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="pt-br" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Criando Elementos</title>
+  </head>
+  <body>
+    <h2>Criando elementos com javascript</h2>
+    <div id="app">
+
+    </div>
+    <a href="www.google.com">google</a>
+    <script>
+        var linkElement = document.createElement('a');
+
+        linkElement.setAttribute('href', 'www.google.com');
+
+        var textElement = document.createTextNode'('acessar o google');
+        linkElement.appendChild(textElement);
+        vat container = document.querySelector('#app');
+        container.appendChild(linkElement);
+    </script>
+  </body>
+</html>
