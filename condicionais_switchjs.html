@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Condicionais js</title>
+  </head>
+  <body>
+    <h4> switch</h4>
+    <script>
+    // pra nao usar varios if no codigo.
+      function saberSexo (sexo) {
+        switch (sexo) {
+          case 'm':
+            return 'masculino';
+          case 'f':
+              return 'femenino';
+          default:
+              return 'gay'
+        }
+      }
+      let resultado = saberSexo('g');
+      console.log(resultado);
+    </script>
+
+  </body>
+</html>
